@@ -14,6 +14,7 @@
 		4D06EDCF1A0BA23D006FE190 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D06EDCE1A0BA23D006FE190 /* Images.xcassets */; };
 		4D06EDD21A0BA23D006FE190 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D06EDD01A0BA23D006FE190 /* LaunchScreen.xib */; };
 		4D06EDDE1A0BA23D006FE190 /* MiniMuseumTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D06EDDD1A0BA23D006FE190 /* MiniMuseumTests.m */; };
+		4DC492E01A0BA32200A99C0C /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DC492DF1A0BA32200A99C0C /* CoreBluetooth.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,7 @@
 		4D06EDD71A0BA23D006FE190 /* MiniMuseumTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MiniMuseumTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D06EDDC1A0BA23D006FE190 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4D06EDDD1A0BA23D006FE190 /* MiniMuseumTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MiniMuseumTests.m; sourceTree = "<group>"; };
+		4DC492DF1A0BA32200A99C0C /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4DC492E01A0BA32200A99C0C /* CoreBluetooth.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +66,7 @@
 		4D06EDB51A0BA23D006FE190 = {
 			isa = PBXGroup;
 			children = (
+				4DC492DF1A0BA32200A99C0C /* CoreBluetooth.framework */,
 				4D06EDC01A0BA23D006FE190 /* MiniMuseum */,
 				4D06EDDA1A0BA23D006FE190 /* MiniMuseumTests */,
 				4D06EDBF1A0BA23D006FE190 /* Products */,
@@ -412,6 +416,7 @@
 				4D06EDE31A0BA23D006FE190 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4D06EDE41A0BA23D006FE190 /* Build configuration list for PBXNativeTarget "MiniMuseumTests" */ = {
 			isa = XCConfigurationList;
@@ -420,6 +425,7 @@
 				4D06EDE61A0BA23D006FE190 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
