@@ -1,11 +1,3 @@
-//
-//  ViewController.m
-//  MiniMuseum
-//
-//  Created by Max Woolf on 06/11/2014.
-//  Copyright (c) 2014 maxwoolf. All rights reserved.
-//
-
 #import "ViewController.h"
 
 @interface ViewController ()
@@ -16,7 +8,11 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    _locationManager = [[CLLocationManager alloc] init];
+    NSUUID *uuid = [NSUUID UUID]; // Definitely need to change this when beacons arrive
+    _beaconRegion = [[CLBeaconRegion alloc] initWithProximityUUID:uuid
+                                                       identifier:@"com.substrakt.minimuseum"];
+    
 }
 
 - (void)didReceiveMemoryWarning {

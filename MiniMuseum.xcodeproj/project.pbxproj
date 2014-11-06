@@ -15,6 +15,7 @@
 		4D06EDD21A0BA23D006FE190 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D06EDD01A0BA23D006FE190 /* LaunchScreen.xib */; };
 		4D06EDDE1A0BA23D006FE190 /* MiniMuseumTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D06EDDD1A0BA23D006FE190 /* MiniMuseumTests.m */; };
 		4DC492E01A0BA32200A99C0C /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DC492DF1A0BA32200A99C0C /* CoreBluetooth.framework */; };
+		4DC492E21A0BA41600A99C0C /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DC492E11A0BA41600A99C0C /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +43,7 @@
 		4D06EDDC1A0BA23D006FE190 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4D06EDDD1A0BA23D006FE190 /* MiniMuseumTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MiniMuseumTests.m; sourceTree = "<group>"; };
 		4DC492DF1A0BA32200A99C0C /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		4DC492E11A0BA41600A99C0C /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,6 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4DC492E21A0BA41600A99C0C /* CoreLocation.framework in Frameworks */,
 				4DC492E01A0BA32200A99C0C /* CoreBluetooth.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -66,6 +69,7 @@
 		4D06EDB51A0BA23D006FE190 = {
 			isa = PBXGroup;
 			children = (
+				4DC492E11A0BA41600A99C0C /* CoreLocation.framework */,
 				4DC492DF1A0BA32200A99C0C /* CoreBluetooth.framework */,
 				4D06EDC01A0BA23D006FE190 /* MiniMuseum */,
 				4D06EDDA1A0BA23D006FE190 /* MiniMuseumTests */,
