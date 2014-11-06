@@ -16,6 +16,7 @@
 		4D06EDDE1A0BA23D006FE190 /* MiniMuseumTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D06EDDD1A0BA23D006FE190 /* MiniMuseumTests.m */; };
 		4DC492E01A0BA32200A99C0C /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DC492DF1A0BA32200A99C0C /* CoreBluetooth.framework */; };
 		4DC492E21A0BA41600A99C0C /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DC492E11A0BA41600A99C0C /* CoreLocation.framework */; };
+		4DC492E51A0BAF0500A99C0C /* ExhibitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DC492E41A0BAF0500A99C0C /* ExhibitViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,8 @@
 		4D06EDDD1A0BA23D006FE190 /* MiniMuseumTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MiniMuseumTests.m; sourceTree = "<group>"; };
 		4DC492DF1A0BA32200A99C0C /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
 		4DC492E11A0BA41600A99C0C /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		4DC492E31A0BAF0500A99C0C /* ExhibitViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExhibitViewController.h; sourceTree = "<group>"; };
+		4DC492E41A0BAF0500A99C0C /* ExhibitViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExhibitViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +96,8 @@
 				4D06EDC61A0BA23D006FE190 /* AppDelegate.m */,
 				4D06EDC81A0BA23D006FE190 /* ViewController.h */,
 				4D06EDC91A0BA23D006FE190 /* ViewController.m */,
+				4DC492E31A0BAF0500A99C0C /* ExhibitViewController.h */,
+				4DC492E41A0BAF0500A99C0C /* ExhibitViewController.m */,
 				4D06EDCB1A0BA23D006FE190 /* Main.storyboard */,
 				4D06EDCE1A0BA23D006FE190 /* Images.xcassets */,
 				4D06EDD01A0BA23D006FE190 /* LaunchScreen.xib */,
@@ -229,6 +234,7 @@
 			files = (
 				4D06EDCA1A0BA23D006FE190 /* ViewController.m in Sources */,
 				4D06EDC71A0BA23D006FE190 /* AppDelegate.m in Sources */,
+				4DC492E51A0BAF0500A99C0C /* ExhibitViewController.m in Sources */,
 				4D06EDC41A0BA23D006FE190 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

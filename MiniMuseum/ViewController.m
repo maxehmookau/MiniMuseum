@@ -13,13 +13,17 @@
     _beaconRegion = [[CLBeaconRegion alloc] initWithProximityUUID:uuid
                                                        identifier:@"com.substrakt.minimuseum"];
     [_locationManager setDelegate:self];
-    [_locationManager startMonitoringForRegion:_beaconRegion];
+    
     
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (void)viewDidAppear:(BOOL)animated {
+    [_locationManager startMonitoringForRegion:_beaconRegion];
 }
 
 #pragma mark - CLLocationManagerDelegate
@@ -44,6 +48,9 @@
     for (CLBeacon *beacon in beacons) {
         if (beacon.proximity == CLProximityImmediate) {
             _closestBeacon = beacon;
+            [_locationManager stopMonitoringForRegion:_beaconRegion];
+            [_locationManager stopRangingBeaconsInRegion:_beaconRegion];
+            [self performSegueWithIdentifier:@"toExhibit" sender:_closestBeacon];
             NSLog(@"%@", _closestBeacon);
         }
     }
