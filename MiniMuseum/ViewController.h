@@ -8,5 +8,7 @@
 
 @property (nonatomic, strong) CLBeacon *closestBeacon;
 
+@property (nonatomic) IBOutlet UILabel *nearbyLabel;
+
 @end
 

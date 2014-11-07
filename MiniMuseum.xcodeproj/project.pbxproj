@@ -17,6 +17,7 @@
 		4DC492E01A0BA32200A99C0C /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DC492DF1A0BA32200A99C0C /* CoreBluetooth.framework */; };
 		4DC492E21A0BA41600A99C0C /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DC492E11A0BA41600A99C0C /* CoreLocation.framework */; };
 		4DC492E51A0BAF0500A99C0C /* ExhibitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DC492E41A0BAF0500A99C0C /* ExhibitViewController.m */; };
+		4DEDF1C51A0CDD3B001F4D0D /* Exhibit.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DEDF1C41A0CDD3B001F4D0D /* Exhibit.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,8 @@
 		4DC492E11A0BA41600A99C0C /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		4DC492E31A0BAF0500A99C0C /* ExhibitViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExhibitViewController.h; sourceTree = "<group>"; };
 		4DC492E41A0BAF0500A99C0C /* ExhibitViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExhibitViewController.m; sourceTree = "<group>"; };
+		4DEDF1C31A0CDD3B001F4D0D /* Exhibit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Exhibit.h; sourceTree = "<group>"; };
+		4DEDF1C41A0CDD3B001F4D0D /* Exhibit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Exhibit.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +95,8 @@
 		4D06EDC01A0BA23D006FE190 /* MiniMuseum */ = {
 			isa = PBXGroup;
 			children = (
+				4DEDF1C31A0CDD3B001F4D0D /* Exhibit.h */,
+				4DEDF1C41A0CDD3B001F4D0D /* Exhibit.m */,
 				4D06EDC51A0BA23D006FE190 /* AppDelegate.h */,
 				4D06EDC61A0BA23D006FE190 /* AppDelegate.m */,
 				4D06EDC81A0BA23D006FE190 /* ViewController.h */,
@@ -181,6 +186,11 @@
 				TargetAttributes = {
 					4D06EDBD1A0BA23D006FE190 = {
 						CreatedOnToolsVersion = 6.1;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 					4D06EDD61A0BA23D006FE190 = {
 						CreatedOnToolsVersion = 6.1;
@@ -234,6 +244,7 @@
 			files = (
 				4D06EDCA1A0BA23D006FE190 /* ViewController.m in Sources */,
 				4D06EDC71A0BA23D006FE190 /* AppDelegate.m in Sources */,
+				4DEDF1C51A0CDD3B001F4D0D /* Exhibit.m in Sources */,
 				4DC492E51A0BAF0500A99C0C /* ExhibitViewController.m in Sources */,
 				4D06EDC41A0BA23D006FE190 /* main.m in Sources */,
 			);
@@ -357,8 +368,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = MiniMuseum/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -368,8 +380,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = MiniMuseum/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
